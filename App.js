@@ -262,22 +262,22 @@ export default class App extends Component {
     //If false show the Intro Slides
     if (this.state.showRealApp) {
       //Real Application
-      return (
-        <SuperGridSectionList
-          itemDimension={130}
-          sections={this.state.items}
-          style={styles.gridView}
-          renderItem={({ item }) => (
-            <View style={[styles.itemContainer, { backgroundColor: item.code }]}>
-              <Text style={styles.itemName}>{item.name}</Text>
-              <Text style={styles.itemCode}>{item.code}</Text>
-            </View>
-          )}
-          renderSectionHeader={({ section }) => (
-            <Text style={{ color: 'green' }}>{section.title}</Text>
-          )}
-        />
-      );
+      // return (
+      //   <SuperGridSectionList
+      //     itemDimension={130}
+      //     sections={this.state.items}
+      //     style={styles.gridView}
+      //     renderItem={({ item }) => (
+      //       <View style={[styles.itemContainer, { backgroundColor: item.code }]}>
+      //         <Text style={styles.itemName}>{item.name}</Text>
+      //         <Text style={styles.itemCode}>{item.code}</Text>
+      //       </View>
+      //     )}
+      //     renderSectionHeader={({ section }) => (
+      //       <Text style={{ color: 'green' }}>{section.title}</Text>
+      //     )}
+      //   />
+      // );
       
       return (
         <View style={styles.container}>
